@@ -1,0 +1,17 @@
+<h1>Answer</h1>
+
+<% @questions.each do |question| %>
+
+<h2>Here's your question:</h2>
+<h3>
+<%= question[:question] %>
+</h3>
+
+<h2>Here's your answer:</h2>
+<h3>
+<%= question[:answer] %>
+</h3>
+
+<% end %>
+
+<%= link_to 'Ask one more question...', ask_path %>
